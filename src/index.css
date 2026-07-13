@@ -7,6 +7,17 @@ body {
   margin: 0;
   padding: 0;
   background: #070708;
+  color: #f2f2f3;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
