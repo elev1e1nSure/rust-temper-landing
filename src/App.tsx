@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Lenis from "lenis";
 import { defaultTheme } from "./theme";
 import type { Theme } from "./theme";
 import { Nav } from "./components/Nav";
@@ -11,6 +12,22 @@ export default function App() {
   const [theme] = useState<Theme>(defaultTheme);
 
   const accent = theme.accent;
+
+  useEffect(() => {
+    const lenis = new Lenis({ anchors: true });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    const rafId = requestAnimationFrame(raf);
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      lenis.destroy();
+    };
+  }, []);
 
   return (
     <div className="app">

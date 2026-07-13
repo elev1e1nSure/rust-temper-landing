@@ -7,8 +7,8 @@ interface HeroProps {
 
 export function Hero({ theme }: HeroProps) {
   const { accent, density, corners } = theme;
-  const pad = densityPad(density, 72);
-  const padBottom = densityPad(density, 56);
+  const pad = densityPad(density, 60);
+  const padBottom = densityPad(density, 44);
   const rBtn = radiusBtn(corners);
 
   const heroPadStyle: React.CSSProperties = {

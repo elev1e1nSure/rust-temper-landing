@@ -43,7 +43,7 @@ export function Faq({ theme }: FaqProps) {
         flexDirection: "column",
         justifyContent: "center",
         boxSizing: "border-box",
-        padding: "32px 0",
+        padding: "20px 0",
         scrollMarginTop: 72,
       }}
     >
