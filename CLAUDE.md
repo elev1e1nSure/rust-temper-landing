@@ -1,16 +1,24 @@
 ## Project
 
-`rust-temper-landing` — landing page for [RustTemper](https://github.com/elev1e1nSure/rust-temper), a Windows Tauri app for tweaking Rust game configs. The page is a single Design Component (`.dc.html`) using the omelette runtime — no build step, no framework.
+`rust-temper-landing` — landing page for [RustTemper](https://github.com/elev1e1nSure/rust-temper), a Windows Tauri app for tweaking Rust game configs. Built with React, TypeScript, Vite, and pnpm.
 
 Key files:
-- `RustTemper Landing.dc.html` — the landing page (template + logic + styles inline)
-- `image-slot.js` — omelette image placeholder component
-- `support.js` — DC runtime (compiled from dc-runtime/src/*.ts, do not edit)
+
+- `src/App.tsx` — root component, composes all sections
+- `src/components/` — Nav, Hero, Carousel, Features, Faq, Footer
+- `src/theme.ts` — design tokens (accent color, density, corner radius)
+- `public/assets/` — screenshot images for the carousel
+- `public/uploads/` — hero background image
 
 ## Commands
 
-- `just dev` — open the landing page in the default browser
-- `just check` — validate the HTML file exists and is non-empty
+- `pnpm dev` — start Vite dev server
+- `pnpm build` — typecheck + production build
+- `pnpm typecheck` — TypeScript type checking
+- `pnpm lint` — ESLint
+- `pnpm format` — Prettier format
+- `pnpm format:check` — Prettier check
+- `pnpm check` — typecheck + lint + format check (CI entry point)
 
 ## Conventions
 
@@ -21,6 +29,5 @@ Key files:
 
 ## Rules
 
-- `support.js` and `image-slot.js` are generated/scaffolded — do not hand-edit
-- The HTML file is the single source of truth; there is no build pipeline
 - This repo hosts only the landing page; the actual RustTemper app lives at `github.com/elev1e1nSure/rust-temper`
+- Use `pnpm` for all package operations

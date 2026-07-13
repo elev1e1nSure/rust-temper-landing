@@ -4,7 +4,22 @@ default:
     @just --list
 
 dev:
-    Start-Process "RustTemper Landing.dc.html"
+    pnpm dev
+
+build:
+    pnpm build
+
+typecheck:
+    pnpm typecheck
+
+lint:
+    pnpm lint
+
+fmt:
+    pnpm format
+
+fmt-check:
+    pnpm format:check
 
 check:
-    $f = "RustTemper Landing.dc.html"; if (-not (Test-Path -LiteralPath $f)) { throw "HTML file missing" }; $c = Get-Content -LiteralPath $f -Raw; if ([string]::IsNullOrWhiteSpace($c)) { throw "HTML file is empty" }
+    pnpm check

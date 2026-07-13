@@ -1,0 +1,5 @@
+dist
+pnpm-lock.yaml
+.vite
+node_modules
+public

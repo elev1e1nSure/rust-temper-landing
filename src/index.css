@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #070708;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #ce3f27;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #df4a31;
+}
+
+::selection {
+  background: rgba(206, 63, 39, 0.35);
+}
