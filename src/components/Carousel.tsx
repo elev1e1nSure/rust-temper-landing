@@ -225,9 +225,9 @@ export function Carousel({ theme }: CarouselProps) {
           </button>
           <div
             style={{
-              minWidth: 150,
+              minWidth: 170,
               textAlign: "center",
-              fontSize: 14,
+              fontSize: 18,
               color: "#f2f2f3",
               fontWeight: 700,
             }}

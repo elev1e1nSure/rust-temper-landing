@@ -31,7 +31,7 @@ const linksStyle: React.CSSProperties = {
 
 export function Nav({ accent }: NavProps) {
   const linkStyle: React.CSSProperties = {
-    fontSize: 14,
+    fontSize: 18,
     color: "#f2f2f3",
     fontWeight: 600,
     transition: "color 0.15s ease",

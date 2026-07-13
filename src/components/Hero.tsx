@@ -29,12 +29,12 @@ export function Hero({ theme }: HeroProps) {
     gap: 10,
     background: accent,
     color: "#f2f2f3",
-    padding: "14px 24px",
+    padding: "16px 28px",
     borderRadius: rBtn,
     fontWeight: 700,
-    fontSize: 15,
+    fontSize: 19,
     textDecoration: "none",
-    transition: "transform 0.15s ease, filter 0.15s ease",
+    transition: "filter 0.15s ease",
   };
 
   const secondaryBtnStyle: React.CSSProperties = {
@@ -43,12 +43,12 @@ export function Hero({ theme }: HeroProps) {
     gap: 10,
     background: "#17171a",
     color: "#f2f2f3",
-    padding: "14px 24px",
+    padding: "16px 28px",
     borderRadius: rBtn,
     fontWeight: 700,
-    fontSize: 15,
+    fontSize: 19,
     textDecoration: "none",
-    transition: "background 0.15s ease, transform 0.15s ease",
+    transition: "background 0.15s ease",
   };
 
   return (
@@ -111,8 +111,8 @@ export function Hero({ theme }: HeroProps) {
         <div style={heroPadStyle}>
           <h1
             style={{
-              fontSize: 40,
-              lineHeight: 1.18,
+              fontSize: 64,
+              lineHeight: 1.12,
               fontWeight: 600,
               letterSpacing: "-0.025em",
               margin: 0,
@@ -124,10 +124,10 @@ export function Hero({ theme }: HeroProps) {
           </h1>
           <p
             style={{
-              fontSize: 17,
-              lineHeight: 1.6,
+              fontSize: 22,
+              lineHeight: 1.55,
               color: "#9a9aa0",
-              maxWidth: 480,
+              maxWidth: 560,
               margin: 0,
               fontWeight: 400,
               letterSpacing: "-0.005em",
@@ -152,11 +152,9 @@ export function Hero({ theme }: HeroProps) {
               style={primaryBtnStyle}
               onMouseEnter={(e) => {
                 e.currentTarget.style.filter = "brightness(1.12)";
-                e.currentTarget.style.transform = "translateY(-1px)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.filter = "";
-                e.currentTarget.style.transform = "";
               }}
             >
               <svg
@@ -174,11 +172,9 @@ export function Hero({ theme }: HeroProps) {
               style={secondaryBtnStyle}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = "#1f1f23";
-                e.currentTarget.style.transform = "translateY(-1px)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = "#17171a";
-                e.currentTarget.style.transform = "";
               }}
             >
               <svg

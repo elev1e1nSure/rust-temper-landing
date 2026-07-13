@@ -17,13 +17,13 @@ export function Footer({ accent }: FooterProps) {
           gap: 12,
         }}
       >
-        <div style={{ fontSize: 13, color: "#8e8e93", fontWeight: 600 }}>
+        <div style={{ fontSize: 15, color: "#8e8e93", fontWeight: 600 }}>
           RustTemper · GPL-3.0
         </div>
         <a
           href="https://github.com/elev1e1nSure/rust-temper"
           style={{
-            fontSize: 13,
+            fontSize: 15,
             color: "#8e8e93",
             fontWeight: 600,
             textDecoration: "none",
