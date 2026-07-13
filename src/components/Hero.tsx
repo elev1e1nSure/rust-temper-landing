@@ -20,6 +20,7 @@ export function Hero({ theme }: HeroProps) {
     flexDirection: "column",
     alignItems: "center",
     gap: 28,
+    rowGap: 28,
   };
 
   const primaryBtnStyle: React.CSSProperties = {
