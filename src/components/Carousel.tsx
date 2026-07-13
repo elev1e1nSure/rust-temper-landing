@@ -68,7 +68,7 @@ export function Carousel({ theme }: CarouselProps) {
   const ease =
     "transform 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.5s ease, filter 0.5s ease";
 
-  const padBottom = densityPad(density, 100);
+  const padBottom = densityPad(density, 80);
   const sectionPadStyle: React.CSSProperties = {
     padding: `0 32px ${padBottom}px`,
     maxWidth: 1320,
@@ -114,7 +114,7 @@ export function Carousel({ theme }: CarouselProps) {
         alignItems: "center",
         justifyContent: "center",
         boxSizing: "border-box",
-        padding: "48px 0",
+        padding: "32px 0",
         scrollMarginTop: 72,
         overflowX: "hidden",
       }}
@@ -196,7 +196,7 @@ export function Carousel({ theme }: CarouselProps) {
             alignItems: "center",
             justifyContent: "center",
             gap: 14,
-            marginTop: 28,
+            marginTop: 44,
           }}
         >
           <button
@@ -267,7 +267,7 @@ export function Carousel({ theme }: CarouselProps) {
             alignItems: "center",
             justifyContent: "center",
             gap: 8,
-            marginTop: 18,
+            marginTop: 26,
           }}
         >
           {shots.map((s, i) => (

@@ -38,7 +38,7 @@ export function Features({ theme }: FeaturesProps) {
         flexDirection: "column",
         justifyContent: "center",
         boxSizing: "border-box",
-        padding: "48px 0",
+        padding: "32px 0",
         scrollMarginTop: 72,
       }}
     >

@@ -6,7 +6,6 @@ import { Hero } from "./components/Hero";
 import { Carousel } from "./components/Carousel";
 import { Features } from "./components/Features";
 import { Faq } from "./components/Faq";
-import { Footer } from "./components/Footer";
 
 export default function App() {
   const [theme] = useState<Theme>(defaultTheme);
@@ -20,7 +19,6 @@ export default function App() {
       <Carousel theme={theme} />
       <Features theme={theme} />
       <Faq theme={theme} />
-      <Footer accent={accent} />
     </div>
   );
 }
