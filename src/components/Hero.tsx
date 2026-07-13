@@ -32,7 +32,7 @@ export function Hero({ theme }: HeroProps) {
     padding: "16px 28px",
     borderRadius: rBtn,
     fontWeight: 700,
-    fontSize: 19,
+    fontSize: 21,
     textDecoration: "none",
     transition: "filter 0.15s ease",
   };
@@ -46,7 +46,7 @@ export function Hero({ theme }: HeroProps) {
     padding: "16px 28px",
     borderRadius: rBtn,
     fontWeight: 700,
-    fontSize: 19,
+    fontSize: 21,
     textDecoration: "none",
     transition: "background 0.15s ease",
   };
@@ -111,8 +111,8 @@ export function Hero({ theme }: HeroProps) {
         <div style={heroPadStyle}>
           <h1
             style={{
-              fontSize: 64,
-              lineHeight: 1.12,
+              fontSize: 76,
+              lineHeight: 1.1,
               fontWeight: 600,
               letterSpacing: "-0.025em",
               margin: 0,
@@ -124,10 +124,10 @@ export function Hero({ theme }: HeroProps) {
           </h1>
           <p
             style={{
-              fontSize: 22,
-              lineHeight: 1.55,
+              fontSize: 25,
+              lineHeight: 1.5,
               color: "#9a9aa0",
-              maxWidth: 560,
+              maxWidth: 620,
               margin: 0,
               fontWeight: 400,
               letterSpacing: "-0.005em",

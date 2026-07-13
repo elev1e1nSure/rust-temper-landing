@@ -71,7 +71,7 @@ export function Carousel({ theme }: CarouselProps) {
   const padBottom = densityPad(density, 100);
   const sectionPadStyle: React.CSSProperties = {
     padding: `0 32px ${padBottom}px`,
-    maxWidth: 1040,
+    maxWidth: 1320,
     margin: "0 auto",
     width: "100%",
   };
@@ -79,7 +79,7 @@ export function Carousel({ theme }: CarouselProps) {
   const carouselStageStyle: React.CSSProperties = {
     position: "relative",
     width: "100%",
-    maxWidth: 1056,
+    maxWidth: 1340,
     margin: "0 auto",
     aspectRatio: "1600 / 648",
     overflow: "visible",
@@ -89,8 +89,8 @@ export function Carousel({ theme }: CarouselProps) {
 
   const arrowStyle: React.CSSProperties = {
     flexShrink: 0,
-    width: 40,
-    height: 40,
+    width: 46,
+    height: 46,
     padding: 0,
     borderRadius: "50%",
     border: "1px solid rgba(255,255,255,0.12)",
@@ -144,8 +144,8 @@ export function Carousel({ theme }: CarouselProps) {
               position: "absolute",
               top: "50%",
               left: "50%",
-              width: "72%",
-              maxWidth: 760,
+              width: "78%",
+              maxWidth: 980,
               aspectRatio: "1600 / 900",
               transform: `translate(-50%,-50%) translateX(${shiftPct}%) translateX(${dx}px) scale(${scale})`,
               opacity,
@@ -225,9 +225,9 @@ export function Carousel({ theme }: CarouselProps) {
           </button>
           <div
             style={{
-              minWidth: 170,
+              minWidth: 180,
               textAlign: "center",
-              fontSize: 18,
+              fontSize: 20,
               color: "#f2f2f3",
               fontWeight: 700,
             }}

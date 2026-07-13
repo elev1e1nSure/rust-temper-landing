@@ -57,7 +57,7 @@ export function Faq({ theme }: FaqProps) {
       >
         <h2
           style={{
-            fontSize: 42,
+            fontSize: 50,
             fontWeight: 600,
             letterSpacing: "-0.025em",
             margin: "0 0 36px",
@@ -100,7 +100,7 @@ export function Faq({ theme }: FaqProps) {
                 >
                   <span
                     style={{
-                      fontSize: 19,
+                      fontSize: 21,
                       fontWeight: 600,
                       letterSpacing: "-0.01em",
                       color: open ? "#f4f4f5" : "#d8d8db",
@@ -143,7 +143,7 @@ export function Faq({ theme }: FaqProps) {
                       style={{
                         margin: 0,
                         padding: "0 22px 20px",
-                        fontSize: 17,
+                        fontSize: 19,
                         lineHeight: 1.6,
                         color: "#9a9aa0",
                         fontWeight: 400,
