@@ -42,7 +42,7 @@ export function Hero({ theme }: HeroProps) {
     alignItems: "center",
     gap: 10,
     background: "transparent",
-    color: "#2aabee",
+    color: "#f2f2f3",
     padding: "16px 28px",
     borderRadius: rBtn,
     fontWeight: 700,
@@ -173,7 +173,7 @@ export function Hero({ theme }: HeroProps) {
               rel="noreferrer"
               style={telegramBtnStyle}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = "rgba(42, 171, 238, 0.14)";
+                e.currentTarget.style.background = "rgba(242, 242, 243, 0.12)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = "transparent";
