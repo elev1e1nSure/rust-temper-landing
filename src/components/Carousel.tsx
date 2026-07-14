@@ -89,8 +89,8 @@ export function Carousel({ theme }: CarouselProps) {
 
   const arrowStyle: React.CSSProperties = {
     flexShrink: 0,
-    width: 46,
-    height: 46,
+    width: 56,
+    height: 56,
     padding: 0,
     borderRadius: "50%",
     background: "transparent",
@@ -192,8 +192,8 @@ export function Carousel({ theme }: CarouselProps) {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            gap: 14,
-            marginTop: 44,
+            gap: 20,
+            marginTop: 72,
           }}
         >
           <button
@@ -210,8 +210,8 @@ export function Carousel({ theme }: CarouselProps) {
             aria-label="Предыдущий скриншот"
           >
             <svg
-              width="18"
-              height="18"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -222,9 +222,9 @@ export function Carousel({ theme }: CarouselProps) {
           </button>
           <div
             style={{
-              minWidth: 180,
+              minWidth: 220,
               textAlign: "center",
-              fontSize: 20,
+              fontSize: 26,
               color: "#f2f2f3",
               fontWeight: 700,
             }}
@@ -245,8 +245,8 @@ export function Carousel({ theme }: CarouselProps) {
             aria-label="Следующий скриншот"
           >
             <svg
-              width="18"
-              height="18"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -263,8 +263,8 @@ export function Carousel({ theme }: CarouselProps) {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            gap: 8,
-            marginTop: 26,
+            gap: 10,
+            marginTop: 30,
           }}
         >
           {shots.map((s, i) => (
@@ -273,8 +273,8 @@ export function Carousel({ theme }: CarouselProps) {
               onClick={() => setIndex(i)}
               aria-label={s.label}
               style={{
-                width: 7,
-                height: 7,
+                width: 10,
+                height: 10,
                 borderRadius: "50%",
                 border: "none",
                 padding: 0,
