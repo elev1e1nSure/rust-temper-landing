@@ -12,7 +12,6 @@ export function Features({ theme }: FeaturesProps) {
 
   const cardStyle: React.CSSProperties = {
     background: colors.card,
-    border: `1px solid ${colors.cardBorder}`,
     borderRadius: r,
     padding: pad,
   };
@@ -45,7 +44,7 @@ export function Features({ theme }: FeaturesProps) {
       <div
         style={{
           padding: "0 32px",
-          maxWidth: 1100,
+          maxWidth: 1300,
           margin: "0 auto",
           width: "100%",
         }}
@@ -61,16 +60,7 @@ export function Features({ theme }: FeaturesProps) {
           >
             Что внутри
           </h2>
-          <p
-            style={{
-              fontSize: 22,
-              color: colors.textMuted,
-              margin: 0,
-              fontWeight: 500,
-            }}
-          >
-            Четыре страницы вместо десятка гайдов и конфигов
-          </p>
+
         </div>
 
         <div
@@ -175,7 +165,7 @@ export function Features({ theme }: FeaturesProps) {
                 fontWeight: 500,
               }}
             >
-              Вместо голых цифр в конфиге — понятные ползунки: тени, текстуры,
+              Вместо голых цифр в консоли — понятные ползунки: тени, текстуры,
               вода, освещение, трава, облака, сглаживание.
             </p>
           </div>

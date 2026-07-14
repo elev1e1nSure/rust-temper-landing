@@ -35,6 +35,10 @@ a:hover {
   color: #df4a31;
 }
 
-::selection {
-  background: rgba(206, 63, 39, 0.35);
+button {
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+  color: inherit;
 }

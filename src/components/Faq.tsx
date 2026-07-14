@@ -8,8 +8,8 @@ interface FaqItem {
 
 const faqData: FaqItem[] = [
   {
-    q: "Это безопасно для аккаунта?",
-    a: "Да. RustTemper меняет только client.cfg и настройки графики — то же самое, что ты бы сделал руками в консоли игры.",
+    q: "Безопасно ли использовать Rust Temper?",
+    a: "Да. Rust Temper не читает память игры, никак не внедряется в её процесс и не провоцирует EAC.",
   },
   {
     q: "Нужно ли знать консольные команды Rust?",
@@ -20,8 +20,8 @@ const faqData: FaqItem[] = [
     a: "Сейчас — только Windows. Приложение собрано на Tauri, поддержка других систем не планируется.",
   },
   {
-    q: "Сколько стоит?",
-    a: "Ничего. RustTemper распространяется бесплатно под лицензией GPL-3.0, исходный код открыт на GitHub.",
+    q: "Останется ли программа бесплатной?",
+    a: "Rust Temper всегда был, является и будет бесплатным.",
   },
 ];
 
@@ -50,7 +50,7 @@ export function Faq({ theme }: FaqProps) {
       <div
         style={{
           padding: "0 32px",
-          maxWidth: 720,
+          maxWidth: 900,
           margin: "0 auto",
           width: "100%",
         }}
@@ -65,7 +65,7 @@ export function Faq({ theme }: FaqProps) {
             color: "#f4f4f5",
           }}
         >
-          Частые вопросы
+          FAQ
         </h2>
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
           {faqData.map((item, i) => {
@@ -75,10 +75,9 @@ export function Faq({ theme }: FaqProps) {
                 key={i}
                 style={{
                   background: open ? "#0f0f12" : "#0b0b0d",
-                  border: `1px solid ${open ? "#26262b" : "#161619"}`,
                   borderRadius: faqRadius,
                   overflow: "hidden",
-                  transition: "background 0.2s ease, border-color 0.2s ease",
+                  transition: "background 0.2s ease",
                 }}
               >
                 <button

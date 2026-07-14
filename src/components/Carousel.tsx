@@ -93,15 +93,13 @@ export function Carousel({ theme }: CarouselProps) {
     height: 46,
     padding: 0,
     borderRadius: "50%",
-    border: "1px solid rgba(255,255,255,0.12)",
-    background: "#0e0e10",
-    color: "#f2f2f3",
+    background: "transparent",
+    color: "#9a9aa0",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     cursor: "pointer",
-    boxShadow: "0 8px 24px -8px rgba(0,0,0,0.6)",
-    transition: "background 0.15s ease, transform 0.15s ease",
+    transition: "color 0.15s ease, transform 0.15s ease",
   };
 
   return (
@@ -164,7 +162,6 @@ export function Carousel({ theme }: CarouselProps) {
               display: "block",
               borderRadius: imgRadius,
               userSelect: "none",
-              border: isActive ? "1px solid #26262b" : "1px solid #1a1a1e",
               boxShadow: isActive
                 ? "0 44px 110px -30px rgba(0,0,0,0.75)"
                 : "0 24px 60px -24px rgba(0,0,0,0.6)",
@@ -202,11 +199,11 @@ export function Carousel({ theme }: CarouselProps) {
           <button
             onClick={() => setIndex(idx - 1)}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = accent;
+              e.currentTarget.style.color = accent;
               e.currentTarget.style.transform = "scale(1.06)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = "#0e0e10";
+              e.currentTarget.style.color = "#9a9aa0";
               e.currentTarget.style.transform = "";
             }}
             style={arrowStyle}
@@ -237,11 +234,11 @@ export function Carousel({ theme }: CarouselProps) {
           <button
             onClick={() => setIndex(idx + 1)}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = accent;
+              e.currentTarget.style.color = accent;
               e.currentTarget.style.transform = "scale(1.06)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = "#0e0e10";
+              e.currentTarget.style.color = "#9a9aa0";
               e.currentTarget.style.transform = "";
             }}
             style={arrowStyle}
