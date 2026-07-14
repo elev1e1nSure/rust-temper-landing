@@ -57,14 +57,6 @@ export function Nav() {
             Возможности
           </a>
           <a
-            href="./kak-povysit-fps-v-rust/"
-            style={linkStyle}
-            onMouseEnter={(e) => (e.currentTarget.style.color = accent)}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#f2f2f3")}
-          >
-            Гайд по FPS
-          </a>
-          <a
             href="#faq"
             style={linkStyle}
             onMouseEnter={(e) => (e.currentTarget.style.color = accent)}
