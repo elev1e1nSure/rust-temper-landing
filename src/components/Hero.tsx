@@ -102,8 +102,9 @@ export function Hero() {
           justifyContent: "center",
         }}
       >
-        <div style={heroPadStyle}>
+        <div className="hero-content-inner" style={heroPadStyle}>
           <h1
+            className="hero-title"
             style={{
               fontSize: 76,
               lineHeight: 1.1,
@@ -114,9 +115,10 @@ export function Hero() {
               color: "#f4f4f5",
             }}
           >
-            Все настройки Rust —<br />в одном окне
+            Все настройки Rust —<br className="hero-title-break" /> в одном окне
           </h1>
           <p
+            className="hero-description"
             style={{
               fontSize: 25,
               lineHeight: 1.5,
@@ -131,6 +133,7 @@ export function Hero() {
             переключатели и ползунки вместо консоли.
           </p>
           <div
+            className="hero-actions"
             style={{
               display: "flex",
               gap: 12,
@@ -142,6 +145,7 @@ export function Hero() {
             }}
           >
             <a
+              className="hero-button"
               href="https://github.com/elev1e1nSure/rust-temper/releases/latest"
               style={primaryBtnStyle}
               onMouseEnter={(e) => {
@@ -162,6 +166,7 @@ export function Hero() {
               Скачать для Windows
             </a>
             <a
+              className="hero-button"
               href="https://telegram.me/rust_temper"
               target="_blank"
               rel="noreferrer"

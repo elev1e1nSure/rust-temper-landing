@@ -22,6 +22,7 @@ export function Features() {
   return (
     <section
       id="features"
+      className="features"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -32,6 +33,7 @@ export function Features() {
       }}
     >
       <div
+        className="features-content"
         style={{
           padding: "0 32px",
           maxWidth: 1300,
@@ -39,8 +41,12 @@ export function Features() {
           width: "100%",
         }}
       >
-        <div style={{ textAlign: "center", marginBottom: 48 }}>
+        <div
+          className="features-heading"
+          style={{ textAlign: "center", marginBottom: 48 }}
+        >
           <h2
+            className="features-title"
             style={{
               fontSize: 50,
               fontWeight: 600,
@@ -54,14 +60,15 @@ export function Features() {
         </div>
 
         <div
+          className="features-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(2, 1fr)",
             gap: 16,
           }}
         >
-          <div style={cardStyle}>
-            <div style={iconWrapStyle}>
+          <div className="feature-card" style={cardStyle}>
+            <div className="feature-card-icon" style={iconWrapStyle}>
               <svg
                 width="18"
                 height="18"
@@ -76,10 +83,14 @@ export function Features() {
                 <path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8" />
               </svg>
             </div>
-            <div style={{ fontSize: 21, fontWeight: 600, marginBottom: 12 }}>
+            <div
+              className="feature-card-title"
+              style={{ fontSize: 21, fontWeight: 600, marginBottom: 12 }}
+            >
               Бинды
             </div>
             <p
+              className="feature-card-description"
               style={{
                 fontSize: 19,
                 color: colors.textMuted,
@@ -94,8 +105,8 @@ export function Features() {
             </p>
           </div>
 
-          <div style={cardStyle}>
-            <div style={iconWrapStyle}>
+          <div className="feature-card" style={cardStyle}>
+            <div className="feature-card-icon" style={iconWrapStyle}>
               <svg
                 width="18"
                 height="18"
@@ -109,10 +120,14 @@ export function Features() {
                 <path d="M15 4V2M15 16v-2M8 9h2M20 9h2M17.8 11.8L19 13M15 9h0M17.8 6.2L19 5M3 21l9-9M12.2 6.2L11 5" />
               </svg>
             </div>
-            <div style={{ fontSize: 21, fontWeight: 600, marginBottom: 12 }}>
+            <div
+              className="feature-card-title"
+              style={{ fontSize: 21, fontWeight: 600, marginBottom: 12 }}
+            >
               Твики
             </div>
             <p
+              className="feature-card-description"
               style={{
                 fontSize: 19,
                 color: colors.textMuted,
@@ -126,8 +141,8 @@ export function Features() {
             </p>
           </div>
 
-          <div style={cardStyle}>
-            <div style={iconWrapStyle}>
+          <div className="feature-card" style={cardStyle}>
+            <div className="feature-card-icon" style={iconWrapStyle}>
               <svg
                 width="18"
                 height="18"
@@ -143,10 +158,14 @@ export function Features() {
                 <path d="M21 15l-5-5L5 21" />
               </svg>
             </div>
-            <div style={{ fontSize: 21, fontWeight: 600, marginBottom: 12 }}>
+            <div
+              className="feature-card-title"
+              style={{ fontSize: 21, fontWeight: 600, marginBottom: 12 }}
+            >
               Графика
             </div>
             <p
+              className="feature-card-description"
               style={{
                 fontSize: 19,
                 color: colors.textMuted,
@@ -160,8 +179,8 @@ export function Features() {
             </p>
           </div>
 
-          <div style={cardStyle}>
-            <div style={iconWrapStyle}>
+          <div className="feature-card" style={cardStyle}>
+            <div className="feature-card-icon" style={iconWrapStyle}>
               <svg
                 width="18"
                 height="18"
@@ -176,10 +195,14 @@ export function Features() {
                 <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33h0a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51h0a1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82v0a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z" />
               </svg>
             </div>
-            <div style={{ fontSize: 21, fontWeight: 600, marginBottom: 12 }}>
+            <div
+              className="feature-card-title"
+              style={{ fontSize: 21, fontWeight: 600, marginBottom: 12 }}
+            >
               Настройки
             </div>
             <p
+              className="feature-card-description"
               style={{
                 fontSize: 19,
                 color: colors.textMuted,
