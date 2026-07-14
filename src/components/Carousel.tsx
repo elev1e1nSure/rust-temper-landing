@@ -100,13 +100,12 @@ export function Carousel() {
     <section
       id="screenshot"
       style={{
-        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
         boxSizing: "border-box",
-        padding: "20px 0",
+        padding: "72px 0",
         scrollMarginTop: 72,
         overflowX: "hidden",
       }}

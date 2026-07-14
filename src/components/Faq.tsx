@@ -33,12 +33,11 @@ export function Faq() {
     <section
       id="faq"
       style={{
-        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         boxSizing: "border-box",
-        padding: "20px 0",
+        padding: "72px 0",
         scrollMarginTop: 72,
       }}
     >
