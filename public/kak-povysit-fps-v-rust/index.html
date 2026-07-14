@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Как повысить FPS в Rust — оптимизация ПК и настроек | RustTemper</title>
+    <meta
+      name="description"
+      content="Практичный способ повысить FPS в Rust: снизить фоновую нагрузку Windows, убрать микрофризы и настроить GC Buffer через RustTemper."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#070708" />
+    <link
+      rel="canonical"
+      href="https://elev1e1nsure.github.io/rust-temper-landing/kak-povysit-fps-v-rust/"
+    />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Как повысить FPS в Rust" />
+    <meta
+      property="og:description"
+      content="Настройки Windows и Rust, которые помогают снизить фоновую нагрузку и убрать микрофризы."
+    />
+    <meta
+      property="og:url"
+      content="https://elev1e1nsure.github.io/rust-temper-landing/kak-povysit-fps-v-rust/"
+    />
+    <meta
+      property="og:image"
+      content="https://elev1e1nsure.github.io/rust-temper-landing/assets/rusttemper-optimization-fps.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Как повысить FPS в Rust" />
+    <meta
+      name="twitter:description"
+      content="Практичные настройки Windows и Rust для более стабильной игры."
+    />
+    <meta
+      name="twitter:image"
+      content="https://elev1e1nsure.github.io/rust-temper-landing/assets/rusttemper-optimization-fps.png"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Как повысить FPS в Rust",
+        "description": "Практичный способ повысить FPS в Rust: снизить фоновую нагрузку Windows, убрать микрофризы и настроить GC Buffer через RustTemper.",
+        "inLanguage": "ru",
+        "mainEntityOfPage": "https://elev1e1nsure.github.io/rust-temper-landing/kak-povysit-fps-v-rust/",
+        "image": "https://elev1e1nsure.github.io/rust-temper-landing/assets/rusttemper-optimization-fps.png",
+        "author": {
+          "@type": "Organization",
+          "name": "RustTemper"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./guide.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../">RUSTTEMPER</a>
+      <a class="header-link" href="../">На главную</a>
+    </header>
+
+    <main>
+      <article class="guide">
+        <p class="eyebrow">Оптимизация Rust</p>
+        <h1>Как повысить FPS<br />в Rust</h1>
+        <p class="lede">
+          FPS упирается не только в настройки графики. Часть просадок и
+          микрофризов создаёт фоновая нагрузка Windows. Начни с неё — затем
+          переходи к параметрам игры.
+        </p>
+        <a
+          class="primary-action"
+          href="https://github.com/elev1e1nSure/rust-temper/releases/latest"
+        >
+          Скачать RustTemper
+        </a>
+
+        <figure>
+          <img
+            src="../assets/rusttemper-optimization-fps.png"
+            alt="Страница оптимизации RustTemper с настройками PCIe LPM, HVCI, Xbox Game Bar, игрового режима Windows и GC Buffer"
+            width="1600"
+            height="900"
+          />
+          <figcaption>
+            В RustTemper системные настройки собраны в одном окне и показывают
+            текущее состояние каждой опции.
+          </figcaption>
+        </figure>
+
+        <section class="intro">
+          <h2>С чего начать оптимизацию</h2>
+          <p>
+            Не существует одной настройки, которая гарантированно даст прирост
+            на любом ПК. Но отключение лишних фоновых функций и правильная
+            настройка игры часто помогают сделать время кадра стабильнее — это
+            заметнее среднего FPS.
+          </p>
+        </section>
+
+        <section class="steps" aria-label="Шаги оптимизации Rust">
+          <div class="step">
+            <span>01</span>
+            <div>
+              <h2>Убери микрофризы от энергосбережения PCIe</h2>
+              <p>
+                Отключи PCIe LPM, если во время игры появляются короткие
+                подлагивания. Эта функция экономит энергию, но при нагрузке
+                может добавлять задержки при выходе устройства из сна.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <span>02</span>
+            <div>
+              <h2>Отключи фоновую запись Xbox Game Bar</h2>
+              <p>
+                Если ты не используешь запись клипов и оверлей Xbox Game Bar,
+                отключи их. Это убирает лишний фоновый процесс и освобождает
+                ресурсы во время матча.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <span>03</span>
+            <div>
+              <h2>Включи игровой режим Windows</h2>
+              <p>
+                Игровой режим помогает Windows отдавать приоритет запущенной
+                игре. Это не заменит настройку графики, но уменьшит влияние
+                фоновых обновлений и задач.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <span>04</span>
+            <div>
+              <h2>Настрой GC Buffer для Rust</h2>
+              <p>
+                GC Buffer определяет объём памяти, который Unity использует
+                перед сборкой мусора. Подходящее значение помогает снизить
+                частоту заметных фризов; его стоит подбирать с учётом объёма
+                оперативной памяти.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <aside class="note">
+          <strong>Важно:</strong> не отключай HVCI только ради FPS, если не
+          понимаешь последствий. Эта функция повышает защиту Windows; решение
+          зависит от того, насколько для тебя важна изоляция ядра.
+        </aside>
+
+        <section class="finish">
+          <p class="eyebrow">Без ручного редактирования конфигов</p>
+          <h2>Настрой Rust за несколько минут</h2>
+          <p>
+            RustTemper объединяет системную оптимизацию, графику, бинды и
+            игровые твики в одном приложении для Windows.
+          </p>
+          <div class="finish-actions">
+            <a
+              class="primary-action"
+              href="https://github.com/elev1e1nSure/rust-temper/releases/latest"
+            >
+              Скачать для Windows
+            </a>
+            <a class="secondary-action" href="../">Посмотреть возможности</a>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
