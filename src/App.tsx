@@ -26,10 +26,12 @@ export default function App() {
   return (
     <div className="app">
       <Nav />
-      <Hero />
-      <Carousel />
-      <Features />
-      <Faq />
+      <main>
+        <Hero />
+        <Carousel />
+        <Features />
+        <Faq />
+      </main>
     </div>
   );
 }
