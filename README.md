@@ -11,6 +11,15 @@ pnpm install
 pnpm dev
 ```
 
+## Deployment
+
+The `Deploy GitHub Pages` workflow publishes every push to `main`.
+
+Before the first deployment, open the repository **Settings → Pages** and set
+**Build and deployment → Source** to **GitHub Actions**. The site will be
+available at `https://elev1e1nSure.github.io/rust-temper-landing/` after the
+workflow completes.
+
 ## Commands
 
 | Command             | Description                            |
