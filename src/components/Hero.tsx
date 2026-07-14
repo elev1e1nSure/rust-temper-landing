@@ -37,12 +37,12 @@ export function Hero({ theme }: HeroProps) {
     transition: "filter 0.15s ease",
   };
 
-  const secondaryBtnStyle: React.CSSProperties = {
+  const telegramBtnStyle: React.CSSProperties = {
     display: "flex",
     alignItems: "center",
     gap: 10,
-    background: "#17171a",
-    color: "#f2f2f3",
+    background: "transparent",
+    color: "#2aabee",
     padding: "16px 28px",
     borderRadius: rBtn,
     fontWeight: 700,
@@ -171,12 +171,12 @@ export function Hero({ theme }: HeroProps) {
               href="https://telegram.me/rust_temper"
               target="_blank"
               rel="noreferrer"
-              style={secondaryBtnStyle}
+              style={telegramBtnStyle}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = "#1f1f23";
+                e.currentTarget.style.background = "rgba(42, 171, 238, 0.14)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = "#17171a";
+                e.currentTarget.style.background = "transparent";
               }}
             >
               <svg
