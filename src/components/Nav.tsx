@@ -7,7 +7,7 @@ const navStyle: React.CSSProperties = {
   top: 0,
   left: 0,
   right: 0,
-  zIndex: 10,
+  zIndex: 100,
   width: "100%",
   background: "rgba(7,7,8,0.35)",
   backdropFilter: "blur(14px)",
