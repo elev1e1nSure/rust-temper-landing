@@ -42,10 +42,11 @@ export function Features() {
         <div style={{ textAlign: "center", marginBottom: 48 }}>
           <h2
             style={{
-              fontSize: 60,
-              fontWeight: 800,
-              letterSpacing: "-0.01em",
+              fontSize: 50,
+              fontWeight: 600,
+              letterSpacing: "-0.025em",
               margin: "0 0 12px",
+              color: "#f4f4f5",
             }}
           >
             Что внутри
@@ -75,16 +76,16 @@ export function Features() {
                 <path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8" />
               </svg>
             </div>
-            <div style={{ fontSize: 25, fontWeight: 700, marginBottom: 12 }}>
+            <div style={{ fontSize: 21, fontWeight: 600, marginBottom: 12 }}>
               Бинды
             </div>
             <p
               style={{
                 fontSize: 19,
                 color: colors.textMuted,
-                lineHeight: 1.55,
+                lineHeight: 1.6,
                 margin: 0,
-                fontWeight: 500,
+                fontWeight: 400,
               }}
             >
               Раскладка клавиатуры прямо на экране: кликаешь клавишу, вводишь
@@ -108,20 +109,20 @@ export function Features() {
                 <path d="M15 4V2M15 16v-2M8 9h2M20 9h2M17.8 11.8L19 13M15 9h0M17.8 6.2L19 5M3 21l9-9M12.2 6.2L11 5" />
               </svg>
             </div>
-            <div style={{ fontSize: 25, fontWeight: 700, marginBottom: 12 }}>
+            <div style={{ fontSize: 21, fontWeight: 600, marginBottom: 12 }}>
               Твики
             </div>
             <p
               style={{
                 fontSize: 19,
                 color: colors.textMuted,
-                lineHeight: 1.55,
+                lineHeight: 1.6,
                 margin: 0,
-                fontWeight: 500,
+                fontWeight: 400,
               }}
             >
-              Переключатели для популярных фишек client.cfg: прирост FPS, чистый
-              экран, настройки оружия. Выключил — всё вернулось как было.
+              Переключатели для тюнинга клиента: чистый экран, настройки оружия,
+              параметры, влияющие на FPS. Выключил — всё вернулось как было.
             </p>
           </div>
 
@@ -142,16 +143,16 @@ export function Features() {
                 <path d="M21 15l-5-5L5 21" />
               </svg>
             </div>
-            <div style={{ fontSize: 25, fontWeight: 700, marginBottom: 12 }}>
+            <div style={{ fontSize: 21, fontWeight: 600, marginBottom: 12 }}>
               Графика
             </div>
             <p
               style={{
                 fontSize: 19,
                 color: colors.textMuted,
-                lineHeight: 1.55,
+                lineHeight: 1.6,
                 margin: 0,
-                fontWeight: 500,
+                fontWeight: 400,
               }}
             >
               Вместо голых цифр в консоли — понятные ползунки: тени, текстуры,
@@ -175,16 +176,16 @@ export function Features() {
                 <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33h0a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51h0a1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82v0a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z" />
               </svg>
             </div>
-            <div style={{ fontSize: 25, fontWeight: 700, marginBottom: 12 }}>
+            <div style={{ fontSize: 21, fontWeight: 600, marginBottom: 12 }}>
               Настройки
             </div>
             <p
               style={{
                 fontSize: 19,
                 color: colors.textMuted,
-                lineHeight: 1.55,
+                lineHeight: 1.6,
                 margin: 0,
-                fontWeight: 500,
+                fontWeight: 400,
               }}
             >
               RustTemper сам находит папку с игрой через Steam. Не нашёл —
