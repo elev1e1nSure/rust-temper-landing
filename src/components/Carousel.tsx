@@ -171,6 +171,10 @@ export function Carousel() {
                 <img
                   src={s.src}
                   alt={s.label}
+                  width={1600}
+                  height={900}
+                  loading="lazy"
+                  decoding="async"
                   style={imgStyle}
                   draggable={false}
                 />
