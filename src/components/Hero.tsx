@@ -71,7 +71,7 @@ export function Hero() {
           }}
         >
           <img
-            src="/uploads/ChatGPT Image Jul 14, 2026, 01_00_26 AM.png"
+            src="./uploads/ChatGPT Image Jul 14, 2026, 01_00_26 AM.png"
             alt=""
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />

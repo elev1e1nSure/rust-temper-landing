@@ -7,11 +7,11 @@ interface Screenshot {
 }
 
 const shots: Screenshot[] = [
-  { src: "/assets/screenshot-binds.png", label: "Бинды" },
-  { src: "/assets/screenshot-tweaks.png", label: "Твики" },
-  { src: "/assets/screenshot-optimization.png", label: "Оптимизация" },
-  { src: "/assets/screenshot-graphics.png", label: "Графика" },
-  { src: "/assets/screenshot-settings.png", label: "Настройки" },
+  { src: "./assets/screenshot-binds.png", label: "Бинды" },
+  { src: "./assets/screenshot-tweaks.png", label: "Твики" },
+  { src: "./assets/screenshot-optimization.png", label: "Оптимизация" },
+  { src: "./assets/screenshot-graphics.png", label: "Графика" },
+  { src: "./assets/screenshot-settings.png", label: "Настройки" },
 ];
 
 export function Carousel() {

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Lenis from "lenis";
 import { Nav } from "./components/Nav";
 import { Hero } from "./components/Hero";
+import { HeroPattern } from "./components/HeroPattern";
 import { Carousel } from "./components/Carousel";
 import { Features } from "./components/Features";
 import { Faq } from "./components/Faq";
@@ -27,6 +28,7 @@ export default function App() {
     <div className="app">
       <Nav />
       <Hero />
+      <HeroPattern />
       <Carousel />
       <Features />
       <Faq />
