@@ -43,39 +43,62 @@ button {
   color: inherit;
 }
 
-.hero-pattern {
+.site-pattern {
   position: relative;
-  height: clamp(130px, 16vw, 220px);
+  isolation: isolate;
   overflow: hidden;
+  background-color: #070708;
+}
+
+.site-pattern::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  z-index: 0;
+  opacity: 0.42;
   background:
-    radial-gradient(circle at 74% 54%, rgb(206 63 39 / 8%), transparent 27%),
-    linear-gradient(90deg, #070708 0%, #0d0b0b 52%, #070708 100%);
+    radial-gradient(circle at 12% 18%, rgb(206 63 39 / 7%), transparent 22%),
+    radial-gradient(circle at 83% 44%, rgb(206 63 39 / 5%), transparent 26%),
+    radial-gradient(rgb(242 242 243 / 18%) 0.6px, transparent 0.7px);
+  background-position:
+    0 0,
+    0 0,
+    0 0;
+  background-size:
+    auto,
+    auto,
+    7px 7px;
+  animation: pattern-field-shift 48s linear infinite alternate;
 }
 
-.hero-pattern::before {
+.site-pattern::after {
   position: absolute;
   inset: 0;
   content: "";
-  opacity: 0.33;
-  background-image: radial-gradient(
-    rgb(242 242 243 / 22%) 0.65px,
-    transparent 0.7px
-  );
-  background-size: 7px 7px;
-  mask-image: linear-gradient(
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
     90deg,
-    transparent,
-    black 22%,
-    black 78%,
-    transparent
+    #070708 0%,
+    transparent 18% 82%,
+    #070708 100%
   );
 }
 
-.hero-pattern::after {
+.site-pattern > :not(.hero-pattern) {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-pattern {
   position: absolute;
-  inset: 0;
-  content: "";
-  background: linear-gradient(90deg, #070708, transparent 24% 76%, #070708);
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  height: clamp(260px, 30vw, 440px);
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .hero-pattern__line {
@@ -153,9 +176,19 @@ button {
   }
 }
 
+@keyframes pattern-field-shift {
+  to {
+    background-position:
+      8% 2%,
+      -6% 3%,
+      12px 16px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-pattern__line,
-  .hero-pattern__spark {
+  .hero-pattern__spark,
+  .site-pattern::before {
     animation: none;
   }
 }

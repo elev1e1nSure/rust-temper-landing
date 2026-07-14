@@ -28,10 +28,12 @@ export default function App() {
     <div className="app">
       <Nav />
       <Hero />
-      <HeroPattern />
-      <Carousel />
-      <Features />
-      <Faq />
+      <div className="site-pattern">
+        <HeroPattern />
+        <Carousel />
+        <Features />
+        <Faq />
+      </div>
     </div>
   );
 }
