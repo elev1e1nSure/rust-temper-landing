@@ -1,5 +1,5 @@
 import { useState, useCallback, useRef } from "react";
-import { densityPad, type Theme } from "../theme";
+import { accent } from "../theme";
 
 interface Screenshot {
   src: string;
@@ -14,12 +14,7 @@ const shots: Screenshot[] = [
   { src: "/assets/screenshot-settings.png", label: "Настройки" },
 ];
 
-interface CarouselProps {
-  theme: Theme;
-}
-
-export function Carousel({ theme }: CarouselProps) {
-  const { accent, density, corners } = theme;
+export function Carousel() {
   const n = shots.length;
   const [idx, setIdx] = useState(0);
   const [dragging, setDragging] = useState(false);
@@ -63,14 +58,13 @@ export function Carousel({ theme }: CarouselProps) {
     }, 0);
   }, [dragging, dragDX, idx, setIndex]);
 
-  const imgRadius = corners === "sharp" ? 4 : 14;
+  const imgRadius = 14;
   const dx = dragging ? dragDX : 0;
   const ease =
     "transform 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.5s ease, filter 0.5s ease";
 
-  const padBottom = densityPad(density, 60);
   const sectionPadStyle: React.CSSProperties = {
-    padding: `0 32px ${padBottom}px`,
+    padding: "0 32px 60px",
     maxWidth: 1320,
     margin: "0 auto",
     width: "100%",

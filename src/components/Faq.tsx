@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { Theme } from "../theme";
+import { accent } from "../theme";
 
 interface FaqItem {
   q: string;
@@ -25,14 +25,9 @@ const faqData: FaqItem[] = [
   },
 ];
 
-interface FaqProps {
-  theme: Theme;
-}
-
-export function Faq({ theme }: FaqProps) {
-  const { accent, corners } = theme;
+export function Faq() {
   const [openIdx, setOpenIdx] = useState(-1);
-  const faqRadius = corners === "sharp" ? 4 : 12;
+  const faqRadius = 12;
 
   return (
     <section

@@ -1,18 +1,8 @@
-import { densityPad, radiusBtn } from "../theme";
-import type { Theme } from "../theme";
+import { accent } from "../theme";
 
-interface HeroProps {
-  theme: Theme;
-}
-
-export function Hero({ theme }: HeroProps) {
-  const { accent, density, corners } = theme;
-  const pad = densityPad(density, 60);
-  const padBottom = densityPad(density, 44);
-  const rBtn = radiusBtn(corners);
-
+export function Hero() {
   const heroPadStyle: React.CSSProperties = {
-    padding: `${pad}px 32px ${padBottom}px`,
+    padding: "60px 32px 44px",
     maxWidth: 960,
     margin: "0 auto",
     textAlign: "center",
@@ -30,7 +20,7 @@ export function Hero({ theme }: HeroProps) {
     background: accent,
     color: "#f2f2f3",
     padding: "16px 28px",
-    borderRadius: rBtn,
+    borderRadius: 8,
     fontWeight: 700,
     fontSize: 21,
     textDecoration: "none",
@@ -44,7 +34,7 @@ export function Hero({ theme }: HeroProps) {
     background: "transparent",
     color: "#f2f2f3",
     padding: "16px 28px",
-    borderRadius: rBtn,
+    borderRadius: 8,
     fontWeight: 700,
     fontSize: 21,
     textDecoration: "none",

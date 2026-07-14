@@ -37,12 +37,10 @@ pnpm dev
 │       ├── Hero.tsx          # Hero section with background
 │       ├── Carousel.tsx      # Screenshot coverflow carousel
 │       ├── Features.tsx      # Feature cards grid
-│       ├── Faq.tsx           # Accordion FAQ
-│       └── Footer.tsx        # Footer
+│       └── Faq.tsx           # Accordion FAQ
 ├── public/
 │   ├── assets/               # Screenshot images
-│   ├── uploads/              # Uploaded images (hero background)
-│   └── src-tauri/icons/      # Tauri icon (from main RustTemper repo)
+│   └── uploads/              # Uploaded images (hero background)
 ├── justfile                  # Task runner
 └── .github/workflows/ci.yml  # CI (typecheck + lint + format)
 ```

@@ -1,6 +1,4 @@
-interface NavProps {
-  accent: string;
-}
+import { accent } from "../theme";
 
 const navStyle: React.CSSProperties = {
   position: "fixed",
@@ -29,7 +27,7 @@ const linksStyle: React.CSSProperties = {
   gap: 28,
 };
 
-export function Nav({ accent }: NavProps) {
+export function Nav() {
   const linkStyle: React.CSSProperties = {
     fontSize: 20,
     color: "#f2f2f3",

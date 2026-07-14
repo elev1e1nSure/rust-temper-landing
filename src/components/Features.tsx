@@ -1,25 +1,16 @@
-import { densityPad, radius, radiusSm, type Theme, colors } from "../theme";
+import { accent, colors } from "../theme";
 
-interface FeaturesProps {
-  theme: Theme;
-}
-
-export function Features({ theme }: FeaturesProps) {
-  const { accent, density, corners } = theme;
-  const pad = densityPad(density, 28);
-  const r = radius(corners);
-  const rs = radiusSm(corners);
-
+export function Features() {
   const cardStyle: React.CSSProperties = {
     background: colors.card,
-    borderRadius: r,
-    padding: pad,
+    borderRadius: 16,
+    padding: 28,
   };
 
   const iconWrapStyle: React.CSSProperties = {
     width: 38,
     height: 38,
-    borderRadius: rs,
+    borderRadius: 9,
     background: colors.cardIconBg,
     display: "flex",
     alignItems: "center",
@@ -60,7 +51,6 @@ export function Features({ theme }: FeaturesProps) {
           >
             Что внутри
           </h2>
-
         </div>
 
         <div
